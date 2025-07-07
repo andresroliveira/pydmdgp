@@ -1,0 +1,26 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydmdgp"
+version = "0.1.0"
+authors = [
+  { name="Andrês Oliveira", email="andresroliveira98@gmail.com" },
+]
+description = "Um solver em Python para o Problema de Geometria de Distâncias Moleculares Discretizável."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file="LICENSE" }
+dependencies = [
+    "numpy",
+    "pandas",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "mypy", 
+]
